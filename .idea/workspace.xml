@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99aa5aaf-b8c7-40da-91c0-0133b4fe2a1d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Tests/NewsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/persistence/ConnectionBD.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bdd.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bdd/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bdd/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bdd/domain/Journaliste.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bdd/domain/Journaliste.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bdd/domain/News.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bdd/domain/News.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bdd/domain/Tag.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bdd/domain/Tag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bdd/persistence/JournalisteDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bdd/persistence/JournalisteDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bdd/persistence/NewsDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bdd/persistence/NewsDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bdd/persistence/NoDataFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bdd/persistence/NoDataFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/Journaliste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Journaliste.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/News.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/News.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/persistence/JournalisteDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/persistence/JournalisteDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/persistence/NewsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/persistence/NewsDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,11 +41,15 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/mysql-connector-java-8.0.19.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bdd" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -41,7 +60,7 @@
       <recent name="persistence" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="bdd" />
@@ -49,9 +68,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NewsTest.readNewsByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bdd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.NewsTest" />
+      <option name="METHOD_NAME" value="readNewsByIdTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NewsTest.readNewsByIdTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bdd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.NewsTest" />
+      <option name="METHOD_NAME" value="readNewsByIdTest2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.NewsTest.readNewsByIdTest2" />
+        <item itemvalue="JUnit.NewsTest.readNewsByIdTest" />
       </list>
     </recent_temporary>
   </component>
@@ -69,14 +122,18 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="371" y="97" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1586186612906">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="97" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1586186612906" />
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580993936242">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1580993936242" />
-    <state x="446" y="51" key="#com.intellij.ide.util.MemberChooser" timestamp="1581086849077">
+    <state x="446" y="51" key="#com.intellij.ide.util.MemberChooser" timestamp="1586178437159">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="51" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1581086849077" />
+    <state x="446" y="51" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1586178437159" />
     <state x="371" y="123" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1581080461742">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -85,46 +142,46 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="438" y="227" width="404" height="236" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1581067521645" />
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1580993958572">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1586178983727">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1580993958572" />
-    <state width="1237" height="220" key="GridCell.Tab.0.bottom" timestamp="1581087592202">
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1586178983727" />
+    <state width="1237" height="147" key="GridCell.Tab.0.bottom" timestamp="1586189685123">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="220" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1581087592202" />
-    <state width="1237" height="220" key="GridCell.Tab.0.center" timestamp="1581087592202">
+    <state width="1237" height="147" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586189685123" />
+    <state width="1237" height="147" key="GridCell.Tab.0.center" timestamp="1586189685123">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="220" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1581087592202" />
-    <state width="1237" height="220" key="GridCell.Tab.0.left" timestamp="1581087592202">
+    <state width="1237" height="147" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1586189685123" />
+    <state width="1237" height="147" key="GridCell.Tab.0.left" timestamp="1586189685123">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="220" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1581087592202" />
-    <state width="1237" height="220" key="GridCell.Tab.0.right" timestamp="1581087592202">
+    <state width="1237" height="147" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1586189685123" />
+    <state width="1237" height="147" key="GridCell.Tab.0.right" timestamp="1586189685123">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="220" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1581087592202" />
-    <state width="1237" height="151" key="GridCell.Tab.1.bottom" timestamp="1581002891389">
+    <state width="1237" height="147" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1586189685123" />
+    <state width="1237" height="151" key="GridCell.Tab.1.bottom" timestamp="1586184079306">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="151" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1581002891389" />
-    <state width="1237" height="151" key="GridCell.Tab.1.center" timestamp="1581002891389">
+    <state width="1237" height="151" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586184079306" />
+    <state width="1237" height="151" key="GridCell.Tab.1.center" timestamp="1586184079306">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="151" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1581002891389" />
-    <state width="1237" height="151" key="GridCell.Tab.1.left" timestamp="1581002891389">
+    <state width="1237" height="151" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1586184079306" />
+    <state width="1237" height="151" key="GridCell.Tab.1.left" timestamp="1586184079305">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="151" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1581002891389" />
-    <state width="1237" height="151" key="GridCell.Tab.1.right" timestamp="1581002891389">
+    <state width="1237" height="151" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1586184079305" />
+    <state width="1237" height="151" key="GridCell.Tab.1.right" timestamp="1586184079306">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="151" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1581002891389" />
-    <state x="121" y="0" key="SettingsEditor" timestamp="1580993960038">
+    <state width="1237" height="151" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1586184079306" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1586172954016">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1580993960038" />
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1586172954016" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1581069728249">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -133,9 +190,36 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="337" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1586157308486" />
+    <state x="376" y="235" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1586181221919">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="376" y="235" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.680@0.0.1280.680" timestamp="1586181221919" />
+    <state x="91" y="0" key="new project wizard" timestamp="1586166409480">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="91" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1586166409480" />
+    <state x="348" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1586178083342">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="348" y="0" key="refactoring.ChangeSignatureDialog/0.0.1280.680@0.0.1280.680" timestamp="1586178083342" />
     <state x="297" y="151" key="run.anything.popup" timestamp="1581069412628">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1581069412628" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1586178891652">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1586178891652" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Tests/NewsTest.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

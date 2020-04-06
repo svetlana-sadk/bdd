@@ -1,42 +1,16 @@
 import domain.Journaliste;
 import domain.News;
-import domain.Tag;
+
 import persistence.JournalisteDao;
 import persistence.NewsDao;
 import persistence.NoDataFoundException;
 
+
 import java.sql.SQLException;
 
 public class Main {
-    public static void main(String[] args) {
-        /*try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/testdb","root", "");
-            PreparedStatement  myStmt = myConn.prepareStatement();
-            String sql = "select * from News";
-            ResultSet rs = myStmt.executeQuery(sql);
-
-            if (rs.next()) {
-                // there is at least one result. Let's read the content
-                var title = rs.getString("Titre");
-                var idReporter = rs.getInt("idJournaliste");
-                System.out.println(title + " et id jounaliste "+idReporter);
-            } {
-                System.exit(-1);
-                // There is no results
-            }
-
-            System.out.println("-- News --");
-            while (rs.next()){
-               System.out.println("titre :"+rs.getString("titre"));
-               System.out.println("contenu :"+rs.getString("contenu"));
-            }
-
-            //
-        } catch (SQLException | ClassNotFoundException e) {
-            e.printStackTrace();
-        }*/
-        try{
+    public static void main(String[] args) throws SQLException, NoDataFoundException {
+        /*try{
             JournalisteDao jdao = new JournalisteDao();
             var journaliste = jdao.readJournalisteById(1);
             System.out.println(journaliste);
@@ -55,6 +29,15 @@ public class Main {
         for (Tag t : listTags){
             System.out.println(t);
         }
-        ndao.readNewsWithTags(1);
+        ndao.readNewsWithTags(1);*/
+
+        NewsDao ndao = new NewsDao();
+        News newsById = ndao.readNewsById(32);
+        System.out.println(newsById.toString());
+
+
+        JournalisteDao jDao = new JournalisteDao();
+        Journaliste journaliste = jDao.readJournalisteById(1);
+        System.out.println(journaliste.toString());
     }
 }

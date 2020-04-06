@@ -1,14 +1,16 @@
 package domain;
 
+import java.util.Date;
 import java.util.List;
 
 public class News {
-    private int id;
+    private Integer id;
     private String title;
     private String content;
-    private String dateDuPoste;
+    private Date DateOfPoste; //LocalDateTime ?
     private List<String> tags;
-    private String reporterName;
+    //private String journalisteName;
+    private Integer journalisteId;
 
     public int getId() {
         return id;
@@ -34,20 +36,20 @@ public class News {
         this.content = content;
     }
 
-    public String getDateDuPoste() {
-        return dateDuPoste;
+    public Date getDateOfPoste() {
+        return DateOfPoste;
     }
 
-    public void setDateDuPoste(String dateDuPoste) {
-        this.dateDuPoste = dateDuPoste;
+    public void setDateOfPoste(Date dateOfPoste) {
+        this.DateOfPoste = dateOfPoste;
     }
 
-    public String getReporterName() {
-        return reporterName;
+    public Integer getJournalisteId() {
+        return journalisteId;
     }
 
-    public void setReporterName(String reporterName) {
-        this.reporterName = reporterName;
+    public void setJournalisteId(Integer journalisteId) {
+        this.journalisteId = journalisteId;
     }
 
     @Override
@@ -56,8 +58,8 @@ public class News {
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", content='" + content + '\'' +
-                ", dateDuPoste='" + dateDuPoste + '\'' +
-                ", reporterName='" + reporterName + '\'' +
+                ", DateOfPoste='" + DateOfPoste + '\'' +
+                ", journalisteId='" + journalisteId + '\'' +
                 '}';
     }
 }
